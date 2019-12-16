@@ -46,7 +46,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    //funcion OnClick del reto 2
+    /*
+    * funcion OnClick del reto 2
+    * se declara intent y se ejecuta su metodo startActivityForResult
+    */
     fun abrirReto2(view: View?) {
         val btn = view as Button
         val intent = Intent(this, MathActivity::class.java)
