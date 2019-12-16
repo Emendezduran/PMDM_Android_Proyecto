@@ -9,83 +9,100 @@
     tools:context=".ColorsActivity">
 
     <TextView
-        android:id="@+id/descripcion1"
-        android:layout_width="300dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="40dp"
-        android:clickable="false"
-        android:fontFamily="@font/holtwood_one_sc"
-        android:text="haz click para buscar el color"
-        android:textColor="#BDC581"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reto1" />
-
-    <TextView
         android:id="@+id/reto1"
-        android:layout_width="154dp"
-        android:layout_height="85dp"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
         android:clickable="false"
         android:fontFamily="@font/holtwood_one_sc"
         android:text="Reto 1"
         android:textColor="#BDC581"
         android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/descripcion1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/btnc2"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#ffb142"
+        android:fontFamily="@font/bungee"
+        android:text="ffb142"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnc3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnc1" />
+
+    <Button
+        android:id="@+id/btnc4"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#ff5252"
+        android:fontFamily="@font/bungee"
+        android:text="ff5252"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnc3" />
+
+    <Button
+        android:id="@+id/btnc3"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#ff793f"
+        android:fontFamily="@font/bungee"
+        android:text="ff793f"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnc4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnc2" />
+
+    <TextView
+        android:id="@+id/descripcion1"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:fontFamily="@font/holtwood_one_sc"
+        android:text="haz click para buscar el color"
+        android:textColor="#BDC581"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnc1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reto1" />
+
+    <Button
         android:id="@+id/btnc1"
         android:layout_width="250dp"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="#ffda79"
         android:fontFamily="@font/bungee"
         android:text="ffda79"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnc2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descripcion1" />
-
-    <Button
-        android:id="@+id/btnc2"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#ffb142"
-        android:fontFamily="@font/bungee"
-        android:text="ffb142"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnc1" />
-
-    <Button
-        android:id="@+id/btnc3"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#ff793f"
-        android:fontFamily="@font/bungee"
-        android:text="ff793f"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnc2" />
-
-    <Button
-        android:id="@+id/btnc4"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#ff5252"
-        android:fontFamily="@font/bungee"
-        android:text="ff5252"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnc3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

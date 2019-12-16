@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
     */
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == REQUEST_R2 || requestCode == REQUEST_R3 ) {
+        if (requestCode == REQUEST_R2) {
             if (resultCode == Activity.RESULT_OK) {
                 with(btn2) { setBackgroundColor(1) }
                 with(btn2) { setEnabled(false) }

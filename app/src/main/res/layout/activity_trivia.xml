@@ -7,11 +7,27 @@
     android:background="#F0F4C3"
     tools:context=".TriviaActivity">
 
+    <TextView
+        android:id="@+id/descripcion3"
+        android:layout_width="358dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="13dp"
+        android:clickable="false"
+        android:fontFamily="@font/holtwood_one_sc"
+        android:text="¿quien dijo esta frase en un discurso?"
+        android:textColor="#BDC581"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/frase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reto3" />
+
     <Button
         android:id="@+id/btnGeorge"
         android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#ffda79"
         android:clickable="false"
         android:fontFamily="@font/bungee"
@@ -19,66 +35,60 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSimon"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frase" />
 
     <Button
-        android:id="@+id/btnAdolf"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#ff793f"
-        android:clickable="false"
-        android:fontFamily="@font/bungee"
-        android:text="adolf hitler"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSimon" />
-
-    <Button
         android:id="@+id/btnSimon"
         android:layout_width="300dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:backgroundTint="#ffb142"
         android:clickable="false"
         android:fontFamily="@font/bungee"
         android:text="simon bolivar"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdolf"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGeorge" />
 
+    <Button
+        android:id="@+id/btnAdolf"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#ff793f"
+        android:clickable="false"
+        android:fontFamily="@font/bungee"
+        android:text="adolf hitler"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSimon" />
+
     <TextView
         android:id="@+id/frase"
-        android:layout_width="323dp"
-        android:layout_height="288dp"
+        android:layout_width="336dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="13dp"
         android:capitalize="none"
         android:clickable="false"
         android:fontFamily="@font/chelsea_market"
         android:text="„Un pueblo ignorante es un instrumento ciego de su propia destrucción; la ambición, la intriga, abusan de la credulidad y de la inexperiencia de hombres ajenos de todo conocimiento político, económico o civil; adoptan como realidades las que son puras ilusiones; toman la licencia por la libertad, la traición por el patriotismo, la venganza por la justicia.“"
         android:textColor="#6B723F"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descripcion3" />
-
-    <TextView
-        android:id="@+id/descripcion3"
-        android:layout_width="358dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:clickable="false"
-        android:fontFamily="@font/holtwood_one_sc"
-        android:text="¿quien dijo esta frase en un discurso?"
-        android:textColor="#BDC581"
-        android:textSize="13sp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGeorge"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reto3" />
+        app:layout_constraintTop_toBottomOf="@+id/descripcion3" />
 
     <TextView
         android:id="@+id/reto3"
@@ -89,7 +99,9 @@
         android:text="Reto 3"
         android:textColor="#BDC581"
         android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/descripcion3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
