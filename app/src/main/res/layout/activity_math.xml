@@ -7,11 +7,40 @@
     android:background="#F0F4C3"
     tools:context=".MathActivity">
 
+    <TextView
+        android:id="@+id/reto2"
+        android:layout_width="166dp"
+        android:layout_height="74dp"
+        android:clickable="false"
+        android:fontFamily="@font/holtwood_one_sc"
+        android:text="Reto 2"
+        android:textColor="#BDC581"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/descripcion2"
+        android:layout_width="286dp"
+        android:layout_height="110dp"
+        android:clickable="false"
+        android:fontFamily="@font/holtwood_one_sc"
+        android:text="101 * 20"
+        android:textColor="#6B723F"
+        android:textSize="56sp"
+        app:layout_constraintBottom_toTopOf="@+id/respuesta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion2" />
+
     <Button
         android:id="@+id/btnVerificar"
-        android:layout_width="203dp"
-        android:layout_height="106dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="196dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#BDC581"
         android:fontFamily="@font/bungee"
         android:text="verificar"
@@ -24,53 +53,28 @@
 
     <TextView
         android:id="@+id/descripcion2"
-        android:layout_width="273dp"
-        android:layout_height="161dp"
-        android:clickable="false"
-        android:fontFamily="@font/holtwood_one_sc"
-        android:text="101 * 20"
-        android:textColor="#6B723F"
-        android:textSize="56sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descripcion2" />
-
-    <TextView
-        android:id="@+id/descripcion2"
-        android:layout_width="197dp"
-        android:layout_height="91dp"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
         android:clickable="false"
         android:fontFamily="@font/holtwood_one_sc"
         android:text="Escribe el resultado"
         android:textColor="#BDC581"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reto2" />
 
-    <TextView
-        android:id="@+id/reto2"
-        android:layout_width="162dp"
-        android:layout_height="99dp"
-        android:clickable="false"
-        android:fontFamily="@font/holtwood_one_sc"
-        android:text="Reto 2"
-        android:textColor="#BDC581"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/respuesta"
-        android:layout_width="213dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="204dp"
+        android:layout_height="36dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descripcion2"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="336dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
