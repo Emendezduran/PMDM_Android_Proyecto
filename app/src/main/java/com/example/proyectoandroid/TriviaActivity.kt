@@ -14,6 +14,7 @@ class TriviaActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //declaracion de ContentView con la descripcion, botones de respuesta y su señal
         setContentView(R.layout.activity_trivia)
         btnGeorge.setOnClickListener { verificar(it) }
         btnAdolf.setOnClickListener { verificar(it) }
@@ -21,7 +22,14 @@ class TriviaActivity : AppCompatActivity() {
     }
 
 
-
+    /*
+    * Funcion que verifica si la respuesta seleccionada es la correcta
+    * se asigna la variable a un btn como Button
+    * bloque condicion donde en caso de ser correcta la respuesta
+    * muestra un toast correcto!
+    * se declara un intent y ejecuta el metodo setResult y finalizamos la actividad
+    * en caso de que la respuesta sea incorrecta muestra un toast vuelve a intentar
+    */
     private fun verificar(view: View?) {
         val btn = view as Button
         if (btn.text == "simon bolivar"){

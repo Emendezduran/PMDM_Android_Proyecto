@@ -56,7 +56,10 @@ class MainActivity : AppCompatActivity() {
         startActivityForResult(intent, REQUEST_R2)
     }
 
-    //funcion OnClick del reto 3
+    /*
+    * funcion OnClick del reto 3
+    * se declara intent y se ejecuta su metodo startActivityForResult
+    */
     fun abrirReto3(view: View?) {
         val btn = view as Button
         val intent = Intent(this, TriviaActivity::class.java)
