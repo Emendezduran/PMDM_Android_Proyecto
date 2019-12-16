@@ -66,7 +66,12 @@ class MainActivity : AppCompatActivity() {
         startActivityForResult(intent, REQUEST_R3)
     }
 
-    //funcion OnClick del reto 4
+    /*
+    * funcion OnClick del reto 4
+    * se asigna la variable a un btn como Button
+    * se cambia el fondo al boton y se deshabilita
+    * se declara intent y se ejecuta su metodo startActivity
+    */
     fun abrirReto4(view: View?) {
         val btn = view as Button
         with(btn) { setBackgroundColor(1) }
