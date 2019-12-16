@@ -32,50 +32,54 @@ class MainActivity : AppCompatActivity() {
         browse("https://github.com/Emendezduran/PMDM_Android_Proyecto")
     }
 
-    //funcion OnClick del reto 1
-    fun abrirReto1(view: View?){
+    /*
+    * funcion OnClick del reto 1
+    * se asigna la variable a un btn como Button
+    * se cambia el fondo al boton y se deshabilita
+    * se declara intent y se ejecuta su metodo startActivity
+    */
+    fun abrirReto1(view: View?) {
         val btn = view as Button
-        with(btn) { setBackgroundColor(1)}
-        with(btn) { setEnabled(false)}
+        with(btn) { setBackgroundColor(1) }
+        with(btn) { setEnabled(false) }
         val intent = Intent(this, ColorsActivity::class.java)
         startActivity(intent)
     }
 
     //funcion OnClick del reto 2
-    fun abrirReto2(view: View?){
+    fun abrirReto2(view: View?) {
         val btn = view as Button
         val intent = Intent(this, MathActivity::class.java)
         startActivityForResult(intent, REQUEST_R2)
     }
 
     //funcion OnClick del reto 3
-    fun abrirReto3(view: View?){
+    fun abrirReto3(view: View?) {
         val btn = view as Button
         val intent = Intent(this, TriviaActivity::class.java)
         startActivityForResult(intent, REQUEST_R3)
     }
 
     //funcion OnClick del reto 4
-    fun abrirReto4(view: View?){
+    fun abrirReto4(view: View?) {
         val btn = view as Button
-        with(btn) { setBackgroundColor(1)}
-        with(btn4) { setEnabled(false)}
+        with(btn) { setBackgroundColor(1) }
+        with(btn4) { setEnabled(false) }
         val intent = Intent(this, CameraActivity::class.java)
         startActivity(intent)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == REQUEST_R2){
+        if (requestCode == REQUEST_R2) {
             if (resultCode == Activity.RESULT_OK) {
-                with(btn2) { setBackgroundColor(1)}
-                with(btn2) { setEnabled(false)}
+                with(btn2) { setBackgroundColor(1) }
+                with(btn2) { setEnabled(false) }
             }
-        }
-        else if (requestCode == REQUEST_R3){
+        } else if (requestCode == REQUEST_R3) {
             if (resultCode == Activity.RESULT_OK) {
-                with(btn3) { setEnabled(false)}
-                with(btn3) { setBackgroundColor(1)}
+                with(btn3) { setEnabled(false) }
+                with(btn3) { setBackgroundColor(1) }
             }
         }
     }
