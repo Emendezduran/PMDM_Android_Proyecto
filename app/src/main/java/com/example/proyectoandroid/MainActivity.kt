@@ -2,7 +2,6 @@ package com.example.proyectoandroid
 
 import android.app.Activity
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -10,6 +9,7 @@ import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.browse
 
+//Constantes para manejar los diferentes Result de las actividades
 const val REQUEST_R2 = 2
 const val REQUEST_R3 = 3
 
@@ -18,8 +18,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        //declaracion de los botones
+        //declaracion de los botones y sus señales
         btn1.setOnClickListener { abrirReto1(it) }
         btn2.setOnClickListener { abrirReto2(it) }
         btn3.setOnClickListener { abrirReto3(it) }
@@ -27,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         link.setOnClickListener { abrirRepositorio(it) }
     }
 
-    //funcion que abre el navegador con el repositorio del proyecto al hacer click en el titulo
+    //funcion que busca en internet el repositorio del proyecto al hacer click al titulo Retos AnKo
     fun abrirRepositorio(view: View) {
         browse("https://github.com/Emendezduran/PMDM_Android_Proyecto")
     }
@@ -80,9 +79,14 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    /*
+    * Funcion que maneja los diferentes Result que pueden venir del reto2 o el reto3
+    * si el resultCode es REQUES_R2 se cambia el fondo al boton y se deshabilita el btn2
+    * si el resultCode es REQUES_R3 se cambia el fondo al boton y se deshabilita el btn3
+    */
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == REQUEST_R2) {
+        if (requestCode == REQUEST_R2 || requestCode == REQUEST_R3 ) {
             if (resultCode == Activity.RESULT_OK) {
                 with(btn2) { setBackgroundColor(1) }
                 with(btn2) { setEnabled(false) }
